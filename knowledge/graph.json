@@ -12,7 +12,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; reconciliar CRM e financeiro e definir período e coorte."
     },
     {
       "id": "outcome.revenue",
@@ -26,7 +30,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; reconciliar CRM e financeiro e definir período e coorte."
     },
     {
       "id": "outcome.margin",
@@ -40,7 +48,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; reconciliar CRM e financeiro e definir período e coorte."
     },
     {
       "id": "model.b2b",
@@ -53,7 +65,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Exemplo de serviços no Brasil; validar ciclo, ticket e processo do negócio concreto."
     },
     {
       "id": "model.b2c",
@@ -66,7 +82,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Exemplo de serviços no Brasil; validar ciclo, ticket e processo do negócio concreto."
     },
     {
       "id": "stage.impression",
@@ -79,7 +99,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.click",
@@ -92,7 +116,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.lead",
@@ -105,7 +133,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.qualified",
@@ -118,7 +150,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.opportunity",
@@ -132,7 +168,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.proposal",
@@ -146,7 +186,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.won",
@@ -160,7 +204,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "stage.lost",
@@ -174,7 +222,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Funil comercial do anunciante; critérios de entrada e saída devem estar documentados."
     },
     {
       "id": "metric.spend",
@@ -187,7 +239,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.impressions",
@@ -200,7 +256,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.clicks",
@@ -213,7 +273,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.leads",
@@ -226,7 +290,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.qualified_leads",
@@ -239,7 +307,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.opportunities",
@@ -253,7 +325,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.sales",
@@ -267,7 +343,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.revenue",
@@ -281,7 +361,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.cpl",
@@ -295,7 +379,11 @@
       "sources": [
         "meta.goals",
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.cpql",
@@ -308,7 +396,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.cac",
@@ -322,7 +414,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.close_rate",
@@ -336,7 +432,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.revenue_per_lead",
@@ -350,7 +450,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.platform_attribution",
@@ -364,7 +468,11 @@
       "sources": [
         "meta.lift",
         "research.nber"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.frequency",
@@ -377,7 +485,11 @@
       ],
       "sources": [
         "meta.delivery"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.ctr",
@@ -390,7 +502,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.cpm",
@@ -403,7 +519,11 @@
       ],
       "sources": [
         "meta.delivery"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.first_response",
@@ -417,7 +537,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.contact_rate",
@@ -431,7 +555,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.capacity",
@@ -445,7 +573,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "metric.sales_cycle",
@@ -459,7 +591,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; comparar apenas definições, períodos e coortes equivalentes."
     },
     {
       "id": "formula.cpl",
@@ -476,7 +612,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.cpql",
@@ -493,7 +633,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.cac",
@@ -511,7 +655,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.close_rate",
@@ -529,7 +677,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.roi",
@@ -548,7 +700,11 @@
         "research.nber",
         "research.geo"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.revenue_per_lead",
@@ -566,7 +722,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.ctr",
@@ -583,7 +743,11 @@
       ],
       "sources": [
         "meta.goals"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "formula.cpm",
@@ -600,7 +764,11 @@
       ],
       "sources": [
         "meta.delivery"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; usar mesma coorte e período e denominador maior que zero."
     },
     {
       "id": "config.leads_objective",
@@ -613,7 +781,11 @@
       ],
       "sources": [
         "meta.objectives"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.instant_form",
@@ -626,7 +798,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.website_form",
@@ -639,7 +815,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.messaging",
@@ -652,7 +832,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.calls",
@@ -665,7 +849,11 @@
       ],
       "sources": [
         "meta.leads"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.crm_capi",
@@ -678,7 +866,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.budget",
@@ -691,7 +883,11 @@
       ],
       "sources": [
         "meta.delivery"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.placements",
@@ -704,7 +900,11 @@
       ],
       "sources": [
         "meta.reels"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.attribution_window",
@@ -718,7 +918,11 @@
       "sources": [
         "meta.lift",
         "research.nber"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.creative",
@@ -732,7 +936,11 @@
       "sources": [
         "meta.reels",
         "meta.tests"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "config.tracking",
@@ -745,7 +953,11 @@
       ],
       "sources": [
         "meta.crm"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Meta Ads; confirmar disponibilidade e configuração atual na conta antes de aplicar."
     },
     {
       "id": "signal.low_cpl",
@@ -760,7 +972,11 @@
         "meta.goals",
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "signal.low_quality",
@@ -774,7 +990,11 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "signal.attribution_gap",
@@ -789,7 +1009,11 @@
         "research.nber",
         "meta.lift"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "signal.long_cycle",
@@ -803,7 +1027,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "signal.capacity_limit",
@@ -817,7 +1045,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "signal.stale_source",
@@ -831,7 +1063,11 @@
       "sources": [
         "meta.objectives"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; sinal observacional que exige investigação no caso concreto."
     },
     {
       "id": "diagnosis.cheap_unqualified",
@@ -846,7 +1082,11 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; hipótese operacional a confirmar com CRM, mídia e atendimento."
     },
     {
       "id": "diagnosis.tracking_gap",
@@ -861,7 +1101,11 @@
         "meta.crm",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; hipótese operacional a confirmar com CRM, mídia e atendimento."
     },
     {
       "id": "diagnosis.slow_followup",
@@ -875,7 +1119,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; hipótese operacional a confirmar com CRM, mídia e atendimento."
     },
     {
       "id": "diagnosis.immature_cohort",
@@ -889,7 +1137,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; hipótese operacional a confirmar com CRM, mídia e atendimento."
     },
     {
       "id": "diagnosis.offer_mismatch",
@@ -903,7 +1155,11 @@
       "sources": [
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; hipótese operacional a confirmar com CRM, mídia e atendimento."
     },
     {
       "id": "action.hold_scale",
@@ -918,7 +1174,11 @@
         "meta.goals",
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.scale_conditional",
@@ -933,7 +1193,11 @@
         "meta.goals",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.audit_crm",
@@ -948,7 +1212,11 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.fix_tracking",
@@ -963,7 +1231,11 @@
         "meta.crm",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.improve_followup",
@@ -977,7 +1249,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.test_formats",
@@ -992,7 +1268,11 @@
         "meta.leads",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.test_offer",
@@ -1006,7 +1286,11 @@
       "sources": [
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.verify_current",
@@ -1020,7 +1304,11 @@
       "sources": [
         "meta.objectives"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "action.review_privacy",
@@ -1034,7 +1322,11 @@
       "sources": [
         "anpd.cookies"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; executar apenas após verificar precondições e medir o desfecho."
     },
     {
       "id": "experiment.ab",
@@ -1047,7 +1339,11 @@
       ],
       "sources": [
         "meta.tests"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; exige desenho válido, elegibilidade e volume compatíveis."
     },
     {
       "id": "experiment.conversion_lift",
@@ -1061,7 +1357,11 @@
       "sources": [
         "meta.lift",
         "research.nber"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; exige desenho válido, elegibilidade e volume compatíveis."
     },
     {
       "id": "experiment.geo",
@@ -1074,7 +1374,11 @@
       ],
       "sources": [
         "research.geo"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; exige desenho válido, elegibilidade e volume compatíveis."
     },
     {
       "id": "constraint.no_universal_threshold",
@@ -1088,7 +1392,11 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços no Brasil; verificar aplicação e atualidade no caso concreto."
     },
     {
       "id": "constraint.privacy",
@@ -1101,7 +1409,11 @@
       ],
       "sources": [
         "anpd.cookies"
-      ]
+      ],
+      "status": "active",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços no Brasil; verificar aplicação e atualidade no caso concreto."
     }
   ],
   "edges": [
@@ -1114,7 +1426,10 @@
         "meta.goals",
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.click",
@@ -1124,7 +1439,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.lead",
@@ -1135,7 +1453,10 @@
         "meta.crm",
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.qualified",
@@ -1146,7 +1467,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.opportunity",
@@ -1156,7 +1480,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.proposal",
@@ -1166,7 +1493,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.proposal",
@@ -1176,7 +1506,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.won",
@@ -1186,7 +1519,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "outcome.sale",
@@ -1196,7 +1532,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "outcome.revenue",
@@ -1206,7 +1545,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.impression",
@@ -1216,7 +1558,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.click",
@@ -1227,7 +1572,10 @@
         "meta.goals",
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.lead",
@@ -1237,7 +1585,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.qualified",
@@ -1247,7 +1598,10 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.opportunity",
@@ -1257,7 +1611,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "stage.won",
@@ -1267,7 +1624,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "outcome.revenue",
@@ -1277,7 +1637,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.spend",
@@ -1287,7 +1650,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.leads",
@@ -1298,7 +1664,10 @@
         "meta.goals",
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.cpl",
@@ -1309,7 +1678,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.spend",
@@ -1320,7 +1692,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.qualified_leads",
@@ -1330,7 +1705,10 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.cpql",
@@ -1340,7 +1718,10 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.spend",
@@ -1350,7 +1731,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.sales",
@@ -1360,7 +1744,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.cac",
@@ -1370,7 +1757,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.sales",
@@ -1380,7 +1770,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.opportunities",
@@ -1390,7 +1783,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.close_rate",
@@ -1400,7 +1796,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.revenue",
@@ -1410,7 +1809,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.leads",
@@ -1421,7 +1823,10 @@
         "meta.goals",
         "meta.leads"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.revenue_per_lead",
@@ -1431,7 +1836,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.clicks",
@@ -1441,7 +1849,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.impressions",
@@ -1451,7 +1862,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.ctr",
@@ -1461,7 +1875,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.spend",
@@ -1472,7 +1889,10 @@
         "meta.delivery",
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.impressions",
@@ -1483,7 +1903,10 @@
         "meta.delivery",
         "meta.goals"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "formula.cpm",
@@ -1493,7 +1916,10 @@
       "sources": [
         "meta.delivery"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "outcome.margin",
@@ -1505,7 +1931,10 @@
         "research.geo",
         "research.nber"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.spend",
@@ -1517,7 +1946,10 @@
         "research.geo",
         "research.nber"
       ],
-      "evidence": "operational_definition"
+      "evidence": "operational_definition",
+      "verified_at": "2026-10-25",
+      "confidence": "high",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.cpl",
@@ -1528,7 +1960,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.cpl",
@@ -1539,7 +1974,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.cpql",
@@ -1550,7 +1988,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.cac",
@@ -1560,7 +2001,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.low_cpl",
@@ -1571,7 +2015,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.low_quality",
@@ -1582,7 +2029,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.cheap_unqualified",
@@ -1593,7 +2043,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.cheap_unqualified",
@@ -1604,7 +2057,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.audit_crm",
@@ -1615,7 +2071,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.hold_scale",
@@ -1627,7 +2086,10 @@
         "meta.goals",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.scale_conditional",
@@ -1638,7 +2100,10 @@
         "meta.goals",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.scale_conditional",
@@ -1649,7 +2114,10 @@
         "meta.goals",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.leads_objective",
@@ -1660,7 +2128,10 @@
         "meta.goals",
         "meta.objectives"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.instant_form",
@@ -1670,7 +2141,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.website_form",
@@ -1680,7 +2154,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.messaging",
@@ -1690,7 +2167,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.calls",
@@ -1700,7 +2180,10 @@
       "sources": [
         "meta.leads"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.instant_form",
@@ -1711,7 +2194,10 @@
         "meta.leads",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.website_form",
@@ -1722,7 +2208,10 @@
         "meta.leads",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.test_formats",
@@ -1733,7 +2222,10 @@
         "meta.leads",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "experiment.ab",
@@ -1744,7 +2236,10 @@
         "meta.crm",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "experiment.ab",
@@ -1755,7 +2250,10 @@
         "meta.goals",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.crm_capi",
@@ -1765,7 +2263,10 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.crm_capi",
@@ -1776,7 +2277,10 @@
         "anpd.cookies",
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.crm_capi",
@@ -1786,7 +2290,10 @@
       "sources": [
         "meta.crm"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.platform_attribution",
@@ -1798,7 +2305,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.platform_attribution",
@@ -1809,7 +2319,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.platform_attribution",
@@ -1820,7 +2333,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.attribution_gap",
@@ -1832,7 +2348,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.tracking_gap",
@@ -1843,7 +2362,10 @@
         "meta.crm",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.fix_tracking",
@@ -1855,7 +2377,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "experiment.conversion_lift",
@@ -1867,7 +2392,10 @@
         "research.geo",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "experiment.conversion_lift",
@@ -1879,7 +2407,10 @@
         "meta.lift",
         "research.nber"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.sales_cycle",
@@ -1889,7 +2420,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.long_cycle",
@@ -1899,7 +2433,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.immature_cohort",
@@ -1910,7 +2447,10 @@
         "meta.crm",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.capacity",
@@ -1920,7 +2460,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.capacity_limit",
@@ -1930,7 +2473,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.first_response",
@@ -1940,7 +2486,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.contact_rate",
@@ -1950,7 +2499,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.slow_followup",
@@ -1960,7 +2512,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.improve_followup",
@@ -1970,7 +2525,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.creative",
@@ -1981,7 +2539,10 @@
         "meta.reels",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "diagnosis.offer_mismatch",
@@ -1991,7 +2552,10 @@
       "sources": [
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "action.test_offer",
@@ -2001,7 +2565,10 @@
       "sources": [
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.placements",
@@ -2012,7 +2579,10 @@
         "meta.reels",
         "meta.tests"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.budget",
@@ -2023,7 +2593,10 @@
         "meta.delivery",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "config.budget",
@@ -2034,7 +2607,10 @@
         "meta.delivery",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "metric.frequency",
@@ -2045,7 +2621,10 @@
         "meta.delivery",
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "signal.stale_source",
@@ -2055,7 +2634,10 @@
       "sources": [
         "meta.objectives"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "constraint.privacy",
@@ -2065,7 +2647,10 @@
       "sources": [
         "anpd.cookies"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B/B2C no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "model.b2b",
@@ -2075,7 +2660,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2B no Brasil; validar no funil e coorte do anunciante."
     },
     {
       "from": "model.b2c",
@@ -2085,7 +2673,10 @@
       "sources": [
         "meta.goals"
       ],
-      "evidence": "inference"
+      "evidence": "inference",
+      "verified_at": "2026-10-25",
+      "confidence": "medium",
+      "context": "Serviços B2C no Brasil; validar no funil e coorte do anunciante."
     }
   ]
 }

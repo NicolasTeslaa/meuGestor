@@ -2,9 +2,9 @@
 
 ## Estrutura
 
-`graph.json` contém `nodes` e `edges`. IDs estáveis seguem `categoria.nome`. Cada nó define tipo, título, resumo, aplicabilidade (`b2b`, `b2c`), fontes e, quando necessário, `evidence`. Cada relação aponta para nós existentes, descreve o vínculo, registra fontes de apoio e classifica a evidência.
+`graph.json` contém `nodes` e `edges`. IDs estáveis seguem `categoria.nome`. Cada nó define tipo, título, resumo, aplicabilidade (`b2b`, `b2c`), contexto, estado, confiança, data de verificação, fontes e, quando necessário, `evidence`. Cada relação aponta para nós existentes, descreve o vínculo e registra fontes, contexto, confiança, data de verificação e classificação de evidência próprias. `status: review` significa que o nó deve ser revalidado antes de orientar uma decisão.
 
-`sources.json` identifica fonte, publicador, URL HTTPS, data de verificação, escopo e limites. `official` significa documentação institucional da Meta ou órgão público; `research` significa pesquisa original. A classificação `operational_definition` registra convenção de cálculo do projeto. `inference` é análise do agente apoiada por fontes, sem atribuir a elas uma conclusão literal. `documented` fica reservado a uma afirmação explicitamente descrita na fonte.
+`sources.json` identifica fonte, publicador, URL HTTPS, data de verificação, escopo e limites. `official` significa documentação institucional da Meta ou órgão público; `research` significa pesquisa original. A classificação `operational_definition` registra convenção de cálculo do projeto. `inference` é análise do agente apoiada por fontes, sem atribuir a elas uma conclusão literal. `documented` fica reservado a uma afirmação explicitamente descrita na fonte. Confiança alta marca uma definição operacional estável ou um conceito documentado; média marca hipótese editorial que precisa de dados do anunciante. Confiança não é probabilidade estatística.
 
 O caminho econômico principal é impressão → clique → lead → qualificação → oportunidade → proposta → venda → receita → margem. Existem ramificações para perda, mensuração, atendimento, testes e privacidade. Relações como `may_indicate` e `recommends_evaluating` são hipóteses condicionais, não relações causais comprovadas.
 

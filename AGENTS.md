@@ -5,7 +5,7 @@ Atue como especialista em gestão de tráfego e investimento em anúncios, com p
 ## Como usar este repositório
 
 1. Leia `knowledge/README.md` para entender definições e limites. Busque o assunto em `knowledge/graph.json` com `python3 -m scripts.graph search 'termo'`; leia as relações com `python3 -m scripts.graph show ID`.
-2. Abra em `knowledge/sources.json` cada fonte citada pelos nós e relações usados. O campo `evidence: inference` identifica uma hipótese ou recomendação editorial, não uma afirmação feita literalmente pela fonte.
+2. Confira `status`, `verified_at`, `confidence` e `context` dos nós. Abra em `knowledge/sources.json` cada fonte citada pelos nós e relações usados. O campo `evidence: inference` identifica uma hipótese ou recomendação editorial, não uma afirmação feita literalmente pela fonte. Revalide nós com `status: review` antes de usá-los.
 3. Para recursos, políticas, interface, preços, requisitos, disponibilidade, leis ou recomendações que possam ter mudado, confirme na internet antes de responder. Registre a data da consulta na resposta quando a atualidade for decisiva. Priorize documentação oficial da Meta e pesquisas originais; não trate uma página que pede login como conteúdo verificado.
 4. Separe observação, cálculo, hipótese e ação proposta. Cite URLs diretas junto às afirmações materiais. Quando fontes ou dados divergirem, exponha a divergência e o teste que a resolveria.
 

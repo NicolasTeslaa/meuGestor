@@ -2,8 +2,12 @@
 
 import argparse
 import json
+import re
 from datetime import date
 from pathlib import Path
+
+
+ID_PATTERN = re.compile(r"[a-z][a-z0-9_]*(?:\.[a-z][a-z0-9_]*)+")
 
 
 def load_graph(root):
@@ -20,8 +24,23 @@ def validate(graph, sources):
     node_ids = set()
     source_ids = set()
 
-    for source in sources.get("sources", []):
+    nodes = graph.get("nodes")
+    edges = graph.get("edges")
+    source_items = sources.get("sources")
+    if not isinstance(nodes, list) or not nodes:
+        errors.append("graph requires nonempty nodes")
+        nodes = []
+    if not isinstance(edges, list):
+        errors.append("graph requires edges list")
+        edges = []
+    if not isinstance(source_items, list) or not source_items:
+        errors.append("catalog requires nonempty sources")
+        source_items = []
+
+    for source in source_items:
         source_id = source.get("id", "<missing>")
+        if not isinstance(source_id, str) or not ID_PATTERN.fullmatch(source_id):
+            errors.append("source requires valid id")
         if source_id in source_ids:
             errors.append("duplicate source id " + source_id)
         source_ids.add(source_id)
@@ -36,14 +55,26 @@ def validate(graph, sources):
         if source.get("kind") not in {"official", "research"}:
             errors.append("source " + source_id + " requires official or research kind")
 
-    for node in graph.get("nodes", []):
+    for node in nodes:
         node_id = node.get("id", "<missing>")
+        if not isinstance(node_id, str) or not ID_PATTERN.fullmatch(node_id):
+            errors.append("node requires valid id")
         if node_id in node_ids:
             errors.append("duplicate node id " + node_id)
         node_ids.add(node_id)
         for field in ("type", "title", "summary", "applies_to"):
             if not node.get(field):
                 errors.append("node " + node_id + " requires " + field)
+        if node.get("status") not in {"active", "review"}:
+            errors.append("node " + node_id + " requires status")
+        if node.get("confidence") not in {"high", "medium", "low"}:
+            errors.append("node " + node_id + " requires confidence")
+        if not node.get("context"):
+            errors.append("node " + node_id + " requires context")
+        try:
+            date.fromisoformat(node.get("verified_at", ""))
+        except ValueError:
+            errors.append("node " + node_id + " has invalid verified_at")
         if "sources" not in node or not isinstance(node["sources"], list):
             errors.append("node " + node_id + " requires sources list")
         elif not node["sources"]:
@@ -56,7 +87,7 @@ def validate(graph, sources):
                 if not node.get(field):
                     errors.append("formula " + node_id + " requires " + field)
 
-    for edge in graph.get("edges", []):
+    for edge in edges:
         edge_label = str(edge.get("from")) + "->" + str(edge.get("to"))
         if edge.get("from") not in node_ids:
             errors.append("edge source " + str(edge.get("from")))
@@ -72,6 +103,14 @@ def validate(graph, sources):
                     errors.append("edge " + edge_label + " references absent source " + source_id)
         if edge.get("evidence") not in {"documented", "operational_definition", "inference"}:
             errors.append("edge " + edge_label + " requires evidence classification")
+        if edge.get("confidence") not in {"high", "medium", "low"}:
+            errors.append("edge " + edge_label + " requires confidence")
+        if not edge.get("context"):
+            errors.append("edge " + edge_label + " requires context")
+        try:
+            date.fromisoformat(edge.get("verified_at", ""))
+        except ValueError:
+            errors.append("edge " + edge_label + " has invalid verified_at")
     return errors
 
 

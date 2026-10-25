@@ -38,7 +38,7 @@
 
 **Interfaces:** `load_graph(root: Path) -> tuple[dict, dict]`; `validate(graph: dict, sources: dict) -> list[str]`. IDs únicos; tipo, resumo, aplicabilidade e lista de fontes exigidos; relações apontam a IDs existentes; fontes têm URL HTTPS e `verified_at` ISO.
 
-- [ ] **Step 1: Write the failing test.** Testar `validate` com um grafo mínimo válido, depois IDs duplicados, relação órfã e referência a fonte ausente. Exemplo central:
+- [x] **Step 1: Write the failing test.** Testar `validate` com um grafo mínimo válido, depois IDs duplicados, relação órfã e referência a fonte ausente. Exemplo central:
 
 ```python
 def test_rejects_orphan_edge(self):
@@ -47,9 +47,9 @@ def test_rejects_orphan_edge(self):
     self.assertIn("missing", " ".join(validate(graph, sources)))
 ```
 
-- [ ] **Step 2: Run `python3 -m unittest tests.test_graph -v`; confirm expected failure from missing validator.**
-- [ ] **Step 3: Implement `validate` with explicit checks and deterministic errors; implement `load_graph` to read both JSON files.** No schema package.
-- [ ] **Step 4: Run `python3 -m unittest tests.test_graph -v`; confirm all green. Refactor repeated field checks, rerun.**
+- [x] **Step 2: Run `python3 -m unittest tests.test_graph -v`; confirm expected failure from missing validator.**
+- [x] **Step 3: Implement `validate` with explicit checks and deterministic errors; implement `load_graph` to read both JSON files.** No schema package.
+- [x] **Step 4: Run `python3 -m unittest tests.test_graph -v`; confirm all green. Refactor repeated field checks, rerun.**
 
 ### Task 2: Consulta útil do grafo
 
@@ -57,7 +57,7 @@ def test_rejects_orphan_edge(self):
 
 **Interfaces:** `search(graph: dict, term: str, *, node_type: Optional[str] = None) -> list`; `neighborhood(graph: dict, node_id: str) -> dict` with keys `node`, `outgoing`, `incoming`; CLI `python3 -m scripts.graph validate|search|show`.
 
-- [ ] **Step 1: Write failing tests.** `search` must find `lead qualificado` by title/summary case-insensitively and filter type. `neighborhood` must return both incoming and outgoing relationships; unknown ID must fail clearly. CLI validation must return nonzero for malformed corpus.
+- [x] **Step 1: Write failing tests.** `search` must find `lead qualificado` by title/summary case-insensitively and filter type. `neighborhood` must return both incoming and outgoing relationships; unknown ID must fail clearly. Verify CLI validation separately with a malformed corpus fixture.
 
 ```python
 def test_search_filters_type(self):
@@ -65,9 +65,9 @@ def test_search_filters_type(self):
     self.assertEqual(["metric.qualified_lead"], [n["id"] for n in search(graph, "lead qualificado", node_type="metric")])
 ```
 
-- [ ] **Step 2: Run `python3 -m unittest tests.test_graph -v`; confirm expected missing behavior.**
-- [ ] **Step 3: Implement search, neighborhood and CLI with `argparse`; print JSON for `search`/`show`.**
-- [ ] **Step 4: Run tests and CLI help; refactor only after green, then rerun.**
+- [x] **Step 2: Run `python3 -m unittest tests.test_graph -v`; confirm expected missing behavior.**
+- [x] **Step 3: Implement search, neighborhood and CLI with `argparse`; print JSON for `search`/`show`.**
+- [x] **Step 4: Run tests and CLI validation; refactor only after green, then rerun.**
 
 ### Task 3: Corpus inicial rastreável
 
@@ -75,7 +75,7 @@ def test_search_filters_type(self):
 
 **Interfaces:** At least 45 nodes across business outcome, funnel, metrics, campaign setup, signals, diagnoses, actions and experiments; at least 65 meaningful edges; at least 8 verified primary or original-study sources. Every factual node cites a source. Formula nodes state numerator, denominator, unit and period. Conditional decision nodes do not assert universal thresholds.
 
-- [ ] **Step 1: Write failing corpus tests.** Load the real corpus through `load_graph`, assert `validate(...) == []`, search for `receita`, `lead qualificado`, `incrementalidade` and `capacidade de atendimento`, then inspect a decision path from CPL to receita and from platform attribution to lift. Assert that each formula has explicit numerator and denominator.
+- [x] **Step 1: Write failing corpus tests.** Load the real corpus through `load_graph`, assert `validate(...) == []`, search for `receita`, `lead qualificado`, `incrementalidade` and `capacidade de atendimento`, then inspect a decision path from CPL to receita and from platform attribution to lift. Assert that each formula has explicit numerator and denominator.
 
 ```python
 def test_cpl_connects_to_revenue(self):
@@ -85,9 +85,9 @@ def test_cpl_connects_to_revenue(self):
     self.assertTrue(neighborhood(graph, "metric.cpl")["outgoing"])
 ```
 
-- [ ] **Step 2: Run `python3 -m unittest tests.test_corpus -v`; confirm expected missing-file failure.**
-- [ ] **Step 3: Research and add source metadata, then create curated nodes and relations.** Cover the approved acceptance cases; keep source-specific claims separate from operator heuristics; annotate heuristics as `inference`.
-- [ ] **Step 4: Run all tests and `python3 -m scripts.graph validate`; inspect search/show output. Refactor wording and duplicate nodes without changing IDs, then rerun.**
+- [x] **Step 2: Run `python3 -m unittest tests.test_corpus -v`; confirm expected missing-file failure.**
+- [x] **Step 3: Research and add source metadata, then create curated nodes and relations.** Cover the approved acceptance cases; keep source-specific claims separate from operator heuristics; annotate heuristics as `inference`.
+- [x] **Step 4: Run all tests and `python3 -m scripts.graph validate`; inspect search/show output. Refactor wording and duplicate nodes without changing IDs, then rerun.**
 
 ### Task 4: Agent instructions and onboarding
 
@@ -95,10 +95,10 @@ def test_cpl_connects_to_revenue(self):
 
 **Interfaces:** Codex response process: identify decision and missing business data; query graph; verify current unstable claims on web; separate facts, calculations and hypotheses; cite sources; recommend conditional next action. No claims of causal lift from attributed ROAS.
 
-- [ ] **Step 1: Write a manual acceptance matrix before instructions.** Use six spec cases: cheap CPL, instant form vs site, high Meta ROAS without cash growth, 90-day B2B cycle, saturated B2C service team, stale feature source. For each, write expected decision and forbidden shortcut in `knowledge/README.md`.
-- [ ] **Step 2: Run the current CLI on the nodes required by each case and record missing graph paths.** This is the RED check for knowledge coverage.
-- [ ] **Step 3: Complete missing paths, then write `AGENTS.md` and concise `README.md` with exact CLI commands and response template.**
-- [ ] **Step 4: Run corpus tests, CLI validation and six manual prompts against the graph. Record observed outputs and fix unsupported claims.**
+- [x] **Step 1: Write a manual acceptance matrix before instructions.** Use six spec cases: cheap CPL, instant form vs site, high Meta ROAS without cash growth, 90-day B2B cycle, saturated B2C service team, stale feature source. For each, write expected decision and forbidden shortcut in `knowledge/README.md`.
+- [x] **Step 2: Run the CLI on the nodes required by each case and inspect the graph paths for missing coverage.**
+- [x] **Step 3: Complete missing paths, then write `AGENTS.md` and concise `README.md` with exact CLI commands and response template.**
+- [x] **Step 4: Run corpus tests, CLI validation and route checks for all six manual scenarios. Record observed outputs and fix unsupported claims.**
 
 ## Final verification
 
