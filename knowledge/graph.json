@@ -1,0 +1,2091 @@
+{
+  "nodes": [
+    {
+      "id": "outcome.sale",
+      "type": "business_outcome",
+      "title": "Venda fechada",
+      "summary": "Contrato ou compra efetivamente concluída no CRM, com definição consistente de cancelamentos.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "outcome.revenue",
+      "type": "business_outcome",
+      "title": "Receita realizada",
+      "summary": "Valor monetário das vendas fechadas no período e coorte definidos; resultado prioritário da decisão.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "outcome.margin",
+      "type": "business_outcome",
+      "title": "Margem de contribuição",
+      "summary": "Receita menos custos variáveis do serviço; necessária para avaliar se aquisição cria valor.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "model.b2b",
+      "type": "business_model",
+      "title": "Serviços B2B no Brasil",
+      "summary": "Considerar múltiplos decisores, ciclo comercial, ticket e qualificação específicos do contrato.",
+      "applies_to": [
+        "b2b"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "model.b2c",
+      "type": "business_model",
+      "title": "Serviços B2C no Brasil",
+      "summary": "Considerar demanda local, prazo de resposta, capacidade de agenda e fechamento por contato.",
+      "applies_to": [
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "stage.impression",
+      "type": "stage",
+      "title": "Impressão",
+      "summary": "Exibição do anúncio; início observável do funil de mídia.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "stage.click",
+      "type": "stage",
+      "title": "Clique ou visita",
+      "summary": "Interação que pode levar a formulário, site, conversa ou ligação.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "stage.lead",
+      "type": "stage",
+      "title": "Lead captado",
+      "summary": "Contato identificável com interesse declarado; ainda não comprova perfil nem intenção de compra.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "stage.qualified",
+      "type": "stage",
+      "title": "Lead qualificado",
+      "summary": "Contato que atende critérios comerciais definidos pelo negócio e registrados no CRM.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "stage.opportunity",
+      "type": "stage",
+      "title": "Oportunidade",
+      "summary": "Lead qualificado com processo de venda aberto e critérios de passagem documentados.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "stage.proposal",
+      "type": "stage",
+      "title": "Proposta ou orçamento",
+      "summary": "Oferta comercial enviada; registrar valor, data e desfecho.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "stage.won",
+      "type": "stage",
+      "title": "Negócio ganho",
+      "summary": "Oportunidade convertida em venda fechada, validada pelo comercial ou financeiro.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "stage.lost",
+      "type": "stage",
+      "title": "Negócio perdido",
+      "summary": "Oportunidade encerrada sem venda, com motivo registrado quando possível.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.spend",
+      "type": "metric",
+      "title": "Investimento em mídia",
+      "summary": "Gasto no período, em reais, comparável à coorte e ao resultado analisados.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "metric.impressions",
+      "type": "metric",
+      "title": "Impressões",
+      "summary": "Quantidade de exibições do anúncio no período.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "metric.clicks",
+      "type": "metric",
+      "title": "Cliques relevantes",
+      "summary": "Cliques ou visitas definidos conforme destino e objetivo; conferir a definição no relatório.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "metric.leads",
+      "type": "metric",
+      "title": "Leads captados",
+      "summary": "Contatos únicos captados no período, após deduplicação definida.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "metric.qualified_leads",
+      "type": "metric",
+      "title": "Leads qualificados",
+      "summary": "Leads que passaram por critérios explícitos de qualificação comercial.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "metric.opportunities",
+      "type": "metric",
+      "title": "Oportunidades abertas",
+      "summary": "Oportunidades criadas a partir dos leads da coorte analisada.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.sales",
+      "type": "metric",
+      "title": "Vendas fechadas",
+      "summary": "Vendas ganhas, considerando cancelamentos e coorte de origem.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.revenue",
+      "type": "metric",
+      "title": "Receita de vendas fechadas",
+      "summary": "Receita efetivamente realizada atribuível à coorte de negócios, com regra de reconciliação.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.cpl",
+      "type": "metric",
+      "title": "CPL — custo por lead",
+      "summary": "Gasto por contato captado; isoladamente não informa qualidade, fechamento ou lucro.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals",
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "metric.cpql",
+      "type": "metric",
+      "title": "Custo por lead qualificado",
+      "summary": "Gasto por lead que atendeu critérios comerciais; exige integração confiável com o CRM.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "metric.cac",
+      "type": "metric",
+      "title": "CAC de mídia por venda",
+      "summary": "Investimento em mídia dividido por vendas fechadas da coorte; custos comerciais adicionais devem ser nomeados separadamente.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.close_rate",
+      "type": "metric",
+      "title": "Taxa de fechamento",
+      "summary": "Proporção de oportunidades que viraram vendas na mesma coorte.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.revenue_per_lead",
+      "type": "metric",
+      "title": "Receita por lead captado",
+      "summary": "Receita da coorte dividida pelos leads captados; combina qualidade e desempenho comercial.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.platform_attribution",
+      "type": "metric",
+      "title": "Receita atribuída pela plataforma",
+      "summary": "Crédito dado pela janela e regra de atribuição do Ads Manager; não equivale automaticamente a receita incremental.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.lift",
+        "research.nber"
+      ]
+    },
+    {
+      "id": "metric.frequency",
+      "type": "metric",
+      "title": "Frequência de exposição",
+      "summary": "Média de impressões por pessoa alcançada no período e segmentação observados.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.delivery"
+      ]
+    },
+    {
+      "id": "metric.ctr",
+      "type": "metric",
+      "title": "CTR",
+      "summary": "Cliques definidos divididos por impressões; não substitui medição de resultado de negócio.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "metric.cpm",
+      "type": "metric",
+      "title": "CPM",
+      "summary": "Custo por mil impressões; varia com leilão, público, criativo e período.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.delivery"
+      ]
+    },
+    {
+      "id": "metric.first_response",
+      "type": "metric",
+      "title": "Tempo até primeiro atendimento",
+      "summary": "Intervalo entre chegada do lead e primeira resposta humana ou automatizada útil.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.contact_rate",
+      "type": "metric",
+      "title": "Taxa de contato efetivo",
+      "summary": "Percentual de leads com conversa efetiva após tentativa de atendimento.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.capacity",
+      "type": "metric",
+      "title": "Capacidade de atendimento",
+      "summary": "Número de novos contatos ou clientes que a operação consegue atender no período sem perda de qualidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "metric.sales_cycle",
+      "type": "metric",
+      "title": "Ciclo comercial",
+      "summary": "Tempo da captura do lead à venda ou perda; usar coortes maduras para avaliar retorno.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "formula.cpl",
+      "type": "formula",
+      "title": "Fórmula do CPL",
+      "summary": "Investimento em mídia dividido por leads captados da mesma janela.",
+      "numerator": "investimento em mídia",
+      "denominator": "leads captados",
+      "unit": "BRL por lead",
+      "period": "mesma janela e coorte",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "formula.cpql",
+      "type": "formula",
+      "title": "Fórmula do custo por lead qualificado",
+      "summary": "Investimento em mídia dividido por leads qualificados da mesma coorte.",
+      "numerator": "investimento em mídia",
+      "denominator": "leads qualificados",
+      "unit": "BRL por lead qualificado",
+      "period": "mesma coorte com maturação declarada",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "formula.cac",
+      "type": "formula",
+      "title": "Fórmula do CAC de mídia",
+      "summary": "Investimento em mídia dividido por vendas fechadas da coorte; denominador zero torna o indicador indefinido.",
+      "numerator": "investimento em mídia",
+      "denominator": "vendas fechadas",
+      "unit": "BRL por venda",
+      "period": "coorte de leads com maturação declarada",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "formula.close_rate",
+      "type": "formula",
+      "title": "Fórmula da taxa de fechamento",
+      "summary": "Vendas fechadas divididas por oportunidades maduras da mesma coorte.",
+      "numerator": "vendas fechadas",
+      "denominator": "oportunidades maduras",
+      "unit": "proporção ou percentual",
+      "period": "coorte acompanhada até desfecho",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "formula.roi",
+      "type": "formula",
+      "title": "Fórmula do retorno sobre investimento",
+      "summary": "Margem de contribuição incremental menos investimento, dividida pelo investimento; exige estimativa causal para chamar de incremental.",
+      "numerator": "margem de contribuição incremental menos investimento",
+      "denominator": "investimento",
+      "unit": "proporção ou percentual",
+      "period": "janela de efeito definida",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "research.nber",
+        "research.geo"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "formula.revenue_per_lead",
+      "type": "formula",
+      "title": "Fórmula da receita por lead",
+      "summary": "Receita realizada dividida por leads captados da mesma coorte.",
+      "numerator": "receita realizada",
+      "denominator": "leads captados",
+      "unit": "BRL por lead",
+      "period": "coorte de leads com maturação declarada",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "id": "formula.ctr",
+      "type": "formula",
+      "title": "Fórmula do CTR",
+      "summary": "Cliques definidos divididos por impressões; especificar se clique é no link ou todos os cliques.",
+      "numerator": "cliques definidos",
+      "denominator": "impressões",
+      "unit": "proporção ou percentual",
+      "period": "mesma janela de mídia",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ]
+    },
+    {
+      "id": "formula.cpm",
+      "type": "formula",
+      "title": "Fórmula do CPM",
+      "summary": "Investimento dividido por impressões e multiplicado por mil.",
+      "numerator": "investimento multiplicado por mil",
+      "denominator": "impressões",
+      "unit": "BRL por mil impressões",
+      "period": "mesma janela de mídia",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.delivery"
+      ]
+    },
+    {
+      "id": "config.leads_objective",
+      "type": "configuration",
+      "title": "Objetivo de campanha de leads",
+      "summary": "Alinhar objetivo, local de conversão, evento e meta de desempenho ao resultado desejado.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.objectives"
+      ]
+    },
+    {
+      "id": "config.instant_form",
+      "type": "configuration",
+      "title": "Formulário instantâneo",
+      "summary": "Formato de captação dentro das tecnologias Meta; medir qualidade e venda além do volume.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "config.website_form",
+      "type": "configuration",
+      "title": "Formulário no site",
+      "summary": "Captação em página própria; avaliar fricção, instrumentação e desfecho comercial.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "config.messaging",
+      "type": "configuration",
+      "title": "Anúncio para conversa",
+      "summary": "Captação por mensagem; qualidade depende também do atendimento e registro da conversa.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "config.calls",
+      "type": "configuration",
+      "title": "Anúncio para ligação",
+      "summary": "Captação por chamada; exige registro de chamadas válidas e resultado comercial.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads"
+      ]
+    },
+    {
+      "id": "config.crm_capi",
+      "type": "configuration",
+      "title": "Conversions API para CRM",
+      "summary": "Conecta sinais de estágio comercial à Meta para otimização por qualidade quando elegível.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "config.budget",
+      "type": "configuration",
+      "title": "Orçamento e lance",
+      "summary": "Definir orçamento e estratégia de lance conforme objetivo, estabilidade de entrega e capacidade de atender a demanda.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.delivery"
+      ]
+    },
+    {
+      "id": "config.placements",
+      "type": "configuration",
+      "title": "Posicionamentos",
+      "summary": "Locais de exibição, incluindo Reels quando compatível; comparar resultados por desfecho comercial.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.reels"
+      ]
+    },
+    {
+      "id": "config.attribution_window",
+      "type": "configuration",
+      "title": "Janela de atribuição",
+      "summary": "Regra temporal do crédito reportado; registrar antes de comparar campanhas ou períodos.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.lift",
+        "research.nber"
+      ]
+    },
+    {
+      "id": "config.creative",
+      "type": "configuration",
+      "title": "Criativo e oferta",
+      "summary": "Mensagem, formato e proposta de valor do anúncio; hipóteses de desempenho exigem teste.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.reels",
+        "meta.tests"
+      ]
+    },
+    {
+      "id": "config.tracking",
+      "type": "configuration",
+      "title": "Instrumentação de eventos",
+      "summary": "Eventos, identificadores e conciliação com CRM precisam de verificação antes de interpretar conversões.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ]
+    },
+    {
+      "id": "signal.low_cpl",
+      "type": "signal",
+      "title": "CPL caiu",
+      "summary": "Sinal de custo menor por contato; pode coexistir com pior qualidade e maior CAC.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals",
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "signal.low_quality",
+      "type": "signal",
+      "title": "Qualidade dos leads caiu",
+      "summary": "Menor proporção de contatos com perfil, contato efetivo ou oportunidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "signal.attribution_gap",
+      "type": "signal",
+      "title": "Receita atribuída maior que crescimento observado",
+      "summary": "Divergência entre relatório de plataforma e resultado financeiro; requer reconciliação e hipótese de incrementabilidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "research.nber",
+        "meta.lift"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "signal.long_cycle",
+      "type": "signal",
+      "title": "Ciclo comercial longo",
+      "summary": "Resultados de vendas podem não aparecer na mesma janela em que a mídia gerou leads.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "signal.capacity_limit",
+      "type": "signal",
+      "title": "Capacidade de atendimento saturada",
+      "summary": "Fila ou agenda cheia pode reduzir resposta e conversão mesmo com mais investimento.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "signal.stale_source",
+      "type": "signal",
+      "title": "Fonte ou recurso desatualizado",
+      "summary": "Funcionalidade, disponibilidade regional ou política pode ter mudado desde a última verificação.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.objectives"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "diagnosis.cheap_unqualified",
+      "type": "diagnosis",
+      "title": "Lead barato sem retorno",
+      "summary": "Investigar queda na qualificação, contato efetivo ou fechamento antes de escalar.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "diagnosis.tracking_gap",
+      "type": "diagnosis",
+      "title": "Lacuna de mensuração",
+      "summary": "Comparar eventos e receita com CRM, duplicidade, janela e definição de conversão.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "diagnosis.slow_followup",
+      "type": "diagnosis",
+      "title": "Atendimento lento ou insuficiente",
+      "summary": "Investigar tempo de resposta, taxa de contato e carga da equipe antes de culpar mídia.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "diagnosis.immature_cohort",
+      "type": "diagnosis",
+      "title": "Coorte ainda imatura",
+      "summary": "Janela observada é menor que o ciclo comercial; vendas finais ainda não são estimáveis com estabilidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "diagnosis.offer_mismatch",
+      "type": "diagnosis",
+      "title": "Oferta ou mensagem desalinhada",
+      "summary": "Criativo gera interesse que não se converte em oportunidade; testar proposta e qualificação.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.hold_scale",
+      "type": "action",
+      "title": "Segurar escala até validar economia",
+      "summary": "Não aumentar verba apenas porque CPL caiu; verificar CAC, receita, margem, maturação e capacidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals",
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.scale_conditional",
+      "type": "action",
+      "title": "Escala condicionada a resultado e capacidade",
+      "summary": "Aumentar investimento de forma testável quando vendas ou sinais maduros sustentam retorno e a operação pode absorver demanda.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.audit_crm",
+      "type": "action",
+      "title": "Auditar CRM e coortes",
+      "summary": "Conferir origem do lead, etapas, datas, vendas, receita, perdas e duplicidade.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.fix_tracking",
+      "type": "action",
+      "title": "Corrigir instrumentação",
+      "summary": "Reconciliar eventos da plataforma e CRM antes de decidir por ROAS atribuído.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.crm",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.improve_followup",
+      "type": "action",
+      "title": "Melhorar atendimento",
+      "summary": "Rever SLA, distribuição e registro de contatos quando resposta ou capacidade limita vendas.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.test_formats",
+      "type": "action",
+      "title": "Testar formulário instantâneo contra site",
+      "summary": "Comparar formatos mantendo hipótese e critério de sucesso comercial definidos; não escolher só por volume.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.leads",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.test_offer",
+      "type": "action",
+      "title": "Testar mensagem e oferta",
+      "summary": "Modificar uma hipótese por vez e avaliar qualidade e vendas no funil.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.verify_current",
+      "type": "action",
+      "title": "Verificar documentação atual",
+      "summary": "Reabrir fonte oficial quando regra de plataforma, recurso, disponibilidade ou política puder ter mudado.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.objectives"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "action.review_privacy",
+      "type": "action",
+      "title": "Revisar coleta e uso de dados",
+      "summary": "Checar requisitos atuais da ANPD e do caso concreto antes de usar cookies, dados de CRM ou integração.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "anpd.cookies"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "experiment.ab",
+      "type": "experiment",
+      "title": "Teste A/B",
+      "summary": "Comparar variantes com critério de sucesso, período e interpretação de resultado conclusivo definidos.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.tests"
+      ]
+    },
+    {
+      "id": "experiment.conversion_lift",
+      "type": "experiment",
+      "title": "Conversion Lift e incrementalidade",
+      "summary": "Teste de incremento para distinguir efeito causal de crédito atribuído, conforme elegibilidade e desenho.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.lift",
+        "research.nber"
+      ]
+    },
+    {
+      "id": "experiment.geo",
+      "type": "experiment",
+      "title": "Experimento geográfico",
+      "summary": "Comparar regiões com desenho apropriado para estimar efeito incremental quando houver escala suficiente.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "research.geo"
+      ]
+    },
+    {
+      "id": "constraint.no_universal_threshold",
+      "type": "constraint",
+      "title": "Sem benchmark universal",
+      "summary": "Limiares de CPL, CAC, frequência e orçamento dependem da economia e contexto do negócio.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "id": "constraint.privacy",
+      "type": "constraint",
+      "title": "Proteção de dados no Brasil",
+      "summary": "Coleta e uso de dados de leads e cookies requerem análise das regras atuais aplicáveis ao caso.",
+      "applies_to": [
+        "b2b",
+        "b2c"
+      ],
+      "sources": [
+        "anpd.cookies"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "stage.impression",
+      "relation": "precedes",
+      "to": "stage.click",
+      "summary": "Uma impressão pode levar a clique.",
+      "sources": [
+        "meta.goals",
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.click",
+      "relation": "precedes",
+      "to": "stage.lead",
+      "summary": "Visita ou interação pode gerar contato.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.lead",
+      "relation": "precedes",
+      "to": "stage.qualified",
+      "summary": "O lead precisa ser qualificado.",
+      "sources": [
+        "meta.crm",
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.qualified",
+      "relation": "precedes",
+      "to": "stage.opportunity",
+      "summary": "Lead qualificado pode virar oportunidade.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.opportunity",
+      "relation": "precedes",
+      "to": "stage.proposal",
+      "summary": "Oportunidade pode receber proposta.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.proposal",
+      "relation": "precedes",
+      "to": "stage.won",
+      "summary": "Proposta pode ser aceita.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.proposal",
+      "relation": "precedes",
+      "to": "stage.lost",
+      "summary": "Proposta pode ser perdida.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.won",
+      "relation": "contributes_to",
+      "to": "outcome.sale",
+      "summary": "Negócio ganho gera venda fechada.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "outcome.sale",
+      "relation": "contributes_to",
+      "to": "outcome.revenue",
+      "summary": "Venda fechada gera receita conforme contrato e recebimento.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "outcome.revenue",
+      "relation": "contributes_to",
+      "to": "outcome.margin",
+      "summary": "Receita integra o cálculo de margem.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.impression",
+      "relation": "measured_by",
+      "to": "metric.impressions",
+      "summary": "Contagem de impressões.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.click",
+      "relation": "measured_by",
+      "to": "metric.clicks",
+      "summary": "Contagem de cliques definidos.",
+      "sources": [
+        "meta.goals",
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.lead",
+      "relation": "measured_by",
+      "to": "metric.leads",
+      "summary": "Contagem de leads únicos.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.qualified",
+      "relation": "measured_by",
+      "to": "metric.qualified_leads",
+      "summary": "Contagem de leads qualificados.",
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.opportunity",
+      "relation": "measured_by",
+      "to": "metric.opportunities",
+      "summary": "Contagem de oportunidades.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "stage.won",
+      "relation": "measured_by",
+      "to": "metric.sales",
+      "summary": "Contagem de vendas.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "outcome.revenue",
+      "relation": "measured_by",
+      "to": "metric.revenue",
+      "summary": "Receita medida no financeiro ou CRM reconciliado.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.spend",
+      "relation": "input_to",
+      "to": "formula.cpl",
+      "summary": "Gasto é numerador do CPL.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.leads",
+      "relation": "input_to",
+      "to": "formula.cpl",
+      "summary": "Leads são denominador do CPL.",
+      "sources": [
+        "meta.goals",
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.cpl",
+      "relation": "defines",
+      "to": "metric.cpl",
+      "summary": "Fórmula define o CPL.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.spend",
+      "relation": "input_to",
+      "to": "formula.cpql",
+      "summary": "Gasto é numerador do custo por lead qualificado.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.qualified_leads",
+      "relation": "input_to",
+      "to": "formula.cpql",
+      "summary": "Leads qualificados são denominador.",
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.cpql",
+      "relation": "defines",
+      "to": "metric.cpql",
+      "summary": "Fórmula define o custo por lead qualificado.",
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.spend",
+      "relation": "input_to",
+      "to": "formula.cac",
+      "summary": "Gasto é numerador do CAC de mídia.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.sales",
+      "relation": "input_to",
+      "to": "formula.cac",
+      "summary": "Vendas são denominador do CAC de mídia.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.cac",
+      "relation": "defines",
+      "to": "metric.cac",
+      "summary": "Fórmula define CAC de mídia.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.sales",
+      "relation": "input_to",
+      "to": "formula.close_rate",
+      "summary": "Vendas são numerador da taxa de fechamento.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.opportunities",
+      "relation": "input_to",
+      "to": "formula.close_rate",
+      "summary": "Oportunidades maduras são denominador.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.close_rate",
+      "relation": "defines",
+      "to": "metric.close_rate",
+      "summary": "Fórmula define a taxa de fechamento.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.revenue",
+      "relation": "input_to",
+      "to": "formula.revenue_per_lead",
+      "summary": "Receita é numerador.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.leads",
+      "relation": "input_to",
+      "to": "formula.revenue_per_lead",
+      "summary": "Leads são denominador.",
+      "sources": [
+        "meta.goals",
+        "meta.leads"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.revenue_per_lead",
+      "relation": "defines",
+      "to": "metric.revenue_per_lead",
+      "summary": "Fórmula define receita por lead.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.clicks",
+      "relation": "input_to",
+      "to": "formula.ctr",
+      "summary": "Cliques são numerador.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.impressions",
+      "relation": "input_to",
+      "to": "formula.ctr",
+      "summary": "Impressões são denominador.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.ctr",
+      "relation": "defines",
+      "to": "metric.ctr",
+      "summary": "Fórmula define CTR.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.spend",
+      "relation": "input_to",
+      "to": "formula.cpm",
+      "summary": "Gasto é numerador antes da multiplicação por mil.",
+      "sources": [
+        "meta.delivery",
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.impressions",
+      "relation": "input_to",
+      "to": "formula.cpm",
+      "summary": "Impressões são denominador.",
+      "sources": [
+        "meta.delivery",
+        "meta.goals"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "formula.cpm",
+      "relation": "defines",
+      "to": "metric.cpm",
+      "summary": "Fórmula define CPM.",
+      "sources": [
+        "meta.delivery"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "outcome.margin",
+      "relation": "input_to",
+      "to": "formula.roi",
+      "summary": "Margem incremental é base do retorno econômico.",
+      "sources": [
+        "meta.goals",
+        "research.geo",
+        "research.nber"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.spend",
+      "relation": "input_to",
+      "to": "formula.roi",
+      "summary": "Investimento é custo e denominador.",
+      "sources": [
+        "meta.goals",
+        "research.geo",
+        "research.nber"
+      ],
+      "evidence": "operational_definition"
+    },
+    {
+      "from": "metric.cpl",
+      "relation": "may_indicate",
+      "to": "signal.low_cpl",
+      "summary": "Queda observada no CPL aciona investigação.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.cpl",
+      "relation": "evaluate_with",
+      "to": "metric.cpql",
+      "summary": "Comparar custo por lead com custo por lead qualificado.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.cpql",
+      "relation": "evaluate_with",
+      "to": "metric.cac",
+      "summary": "Qualidade intermediária deve ser ligada a vendas.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.cac",
+      "relation": "evaluate_with",
+      "to": "outcome.revenue",
+      "summary": "CAC precisa ser comparado ao valor realizado.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.low_cpl",
+      "relation": "may_indicate",
+      "to": "diagnosis.cheap_unqualified",
+      "summary": "CPL baixo pode ocultar leads sem perfil.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.low_quality",
+      "relation": "may_indicate",
+      "to": "diagnosis.cheap_unqualified",
+      "summary": "Queda de qualidade reforça hipótese.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.cheap_unqualified",
+      "relation": "recommends_evaluating",
+      "to": "action.hold_scale",
+      "summary": "Validar economia antes de aumentar verba.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.cheap_unqualified",
+      "relation": "recommends_evaluating",
+      "to": "action.audit_crm",
+      "summary": "Auditar qualidade e vendas por coorte.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.audit_crm",
+      "relation": "measures",
+      "to": "metric.revenue",
+      "summary": "Conciliação de vendas e receita.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.hold_scale",
+      "relation": "conditional_next",
+      "to": "action.scale_conditional",
+      "summary": "Escala fica condicionada a resultado e capacidade.",
+      "sources": [
+        "meta.crm",
+        "meta.goals",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.scale_conditional",
+      "relation": "depends_on",
+      "to": "outcome.margin",
+      "summary": "Margem e retorno sustentam a decisão.",
+      "sources": [
+        "meta.goals",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.scale_conditional",
+      "relation": "depends_on",
+      "to": "metric.capacity",
+      "summary": "Operação precisa absorver demanda adicional.",
+      "sources": [
+        "meta.goals",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.leads_objective",
+      "relation": "depends_on",
+      "to": "outcome.sale",
+      "summary": "Objetivo escolhido deve servir a venda desejada.",
+      "sources": [
+        "meta.goals",
+        "meta.objectives"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.instant_form",
+      "relation": "captures",
+      "to": "stage.lead",
+      "summary": "Formulário instantâneo pode captar lead.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.website_form",
+      "relation": "captures",
+      "to": "stage.lead",
+      "summary": "Formulário no site pode captar lead.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.messaging",
+      "relation": "captures",
+      "to": "stage.lead",
+      "summary": "Conversa pode captar lead.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.calls",
+      "relation": "captures",
+      "to": "stage.lead",
+      "summary": "Ligação pode captar lead.",
+      "sources": [
+        "meta.leads"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.instant_form",
+      "relation": "compared_by",
+      "to": "action.test_formats",
+      "summary": "Formato comparado em teste.",
+      "sources": [
+        "meta.leads",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.website_form",
+      "relation": "compared_by",
+      "to": "action.test_formats",
+      "summary": "Formato comparado em teste.",
+      "sources": [
+        "meta.leads",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.test_formats",
+      "relation": "uses",
+      "to": "experiment.ab",
+      "summary": "Teste controlado ajuda a comparar formatos.",
+      "sources": [
+        "meta.leads",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "experiment.ab",
+      "relation": "evaluates",
+      "to": "metric.qualified_leads",
+      "summary": "Comparação deve incluir qualidade.",
+      "sources": [
+        "meta.crm",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "experiment.ab",
+      "relation": "evaluates",
+      "to": "outcome.revenue",
+      "summary": "Com maturação, comparar receita.",
+      "sources": [
+        "meta.goals",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.crm_capi",
+      "relation": "supports",
+      "to": "stage.qualified",
+      "summary": "Sinais do CRM informam qualidade.",
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.crm_capi",
+      "relation": "depends_on",
+      "to": "constraint.privacy",
+      "summary": "Tratamento de dados exige revisão aplicável.",
+      "sources": [
+        "anpd.cookies",
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.crm_capi",
+      "relation": "depends_on",
+      "to": "config.tracking",
+      "summary": "Integração depende de eventos confiáveis.",
+      "sources": [
+        "meta.crm"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.platform_attribution",
+      "relation": "may_differ_from",
+      "to": "outcome.revenue",
+      "summary": "Crédito reportado pode divergir do caixa observado.",
+      "sources": [
+        "meta.goals",
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.platform_attribution",
+      "relation": "may_indicate",
+      "to": "signal.attribution_gap",
+      "summary": "Divergência aciona diagnóstico.",
+      "sources": [
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.platform_attribution",
+      "relation": "evaluate_with",
+      "to": "experiment.conversion_lift",
+      "summary": "Incrementabilidade exige desenho de teste, quando viável.",
+      "sources": [
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.attribution_gap",
+      "relation": "may_indicate",
+      "to": "diagnosis.tracking_gap",
+      "summary": "Investigar medição e atribuição.",
+      "sources": [
+        "meta.crm",
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.tracking_gap",
+      "relation": "recommends_evaluating",
+      "to": "action.fix_tracking",
+      "summary": "Reconciliar eventos, janela e CRM.",
+      "sources": [
+        "meta.crm",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.fix_tracking",
+      "relation": "depends_on",
+      "to": "config.attribution_window",
+      "summary": "Conferir janela usada nos relatórios.",
+      "sources": [
+        "meta.crm",
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "experiment.conversion_lift",
+      "relation": "alternative_method",
+      "to": "experiment.geo",
+      "summary": "Experimento geográfico é outra abordagem de incrementabilidade.",
+      "sources": [
+        "meta.lift",
+        "research.geo",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "experiment.conversion_lift",
+      "relation": "evaluates",
+      "to": "outcome.revenue",
+      "summary": "Pode medir incremento de resultado quando elegível e corretamente desenhado.",
+      "sources": [
+        "meta.goals",
+        "meta.lift",
+        "research.nber"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.sales_cycle",
+      "relation": "may_indicate",
+      "to": "signal.long_cycle",
+      "summary": "Ciclo longo exige maturação.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.long_cycle",
+      "relation": "may_indicate",
+      "to": "diagnosis.immature_cohort",
+      "summary": "Janela curta pode ocultar vendas futuras.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.immature_cohort",
+      "relation": "recommends_evaluating",
+      "to": "action.audit_crm",
+      "summary": "Acompanhar coorte até desfecho.",
+      "sources": [
+        "meta.crm",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.capacity",
+      "relation": "may_indicate",
+      "to": "signal.capacity_limit",
+      "summary": "Fila ou agenda revela limite operacional.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.capacity_limit",
+      "relation": "may_indicate",
+      "to": "diagnosis.slow_followup",
+      "summary": "Sobrecarga pode degradar atendimento.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.first_response",
+      "relation": "may_indicate",
+      "to": "diagnosis.slow_followup",
+      "summary": "Tempo de resposta ajuda a localizar gargalo.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.contact_rate",
+      "relation": "may_indicate",
+      "to": "diagnosis.slow_followup",
+      "summary": "Taxa de contato ajuda a localizar gargalo.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.slow_followup",
+      "relation": "recommends_evaluating",
+      "to": "action.improve_followup",
+      "summary": "Melhorar atendimento antes de escalar.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.improve_followup",
+      "relation": "supports",
+      "to": "outcome.sale",
+      "summary": "Atendimento é etapa da conversão comercial.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.creative",
+      "relation": "may_indicate",
+      "to": "diagnosis.offer_mismatch",
+      "summary": "Mensagem pode atrair perfil incompatível.",
+      "sources": [
+        "meta.reels",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "diagnosis.offer_mismatch",
+      "relation": "recommends_evaluating",
+      "to": "action.test_offer",
+      "summary": "Testar mensagem e oferta.",
+      "sources": [
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "action.test_offer",
+      "relation": "uses",
+      "to": "experiment.ab",
+      "summary": "Teste A/B pode comparar hipóteses de criativo.",
+      "sources": [
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.placements",
+      "relation": "depends_on",
+      "to": "config.creative",
+      "summary": "Criativo deve servir aos posicionamentos escolhidos.",
+      "sources": [
+        "meta.reels",
+        "meta.tests"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.budget",
+      "relation": "depends_on",
+      "to": "metric.capacity",
+      "summary": "Orçamento deve respeitar capacidade operacional.",
+      "sources": [
+        "meta.delivery",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "config.budget",
+      "relation": "depends_on",
+      "to": "constraint.no_universal_threshold",
+      "summary": "Não existe valor universal de investimento.",
+      "sources": [
+        "meta.delivery",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "metric.frequency",
+      "relation": "depends_on",
+      "to": "constraint.no_universal_threshold",
+      "summary": "Sem frequência máxima universal para todos os casos.",
+      "sources": [
+        "meta.delivery",
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "signal.stale_source",
+      "relation": "recommends_evaluating",
+      "to": "action.verify_current",
+      "summary": "Verificar documentação antes de usar regra atual.",
+      "sources": [
+        "meta.objectives"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "constraint.privacy",
+      "relation": "recommends_evaluating",
+      "to": "action.review_privacy",
+      "summary": "Dados pessoais exigem avaliação do caso.",
+      "sources": [
+        "anpd.cookies"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "model.b2b",
+      "relation": "may_have",
+      "to": "signal.long_cycle",
+      "summary": "Ciclo longo pode ser relevante em serviços B2B.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    },
+    {
+      "from": "model.b2c",
+      "relation": "may_have",
+      "to": "signal.capacity_limit",
+      "summary": "Agenda ou equipe podem limitar serviços B2C.",
+      "sources": [
+        "meta.goals"
+      ],
+      "evidence": "inference"
+    }
+  ]
+}
